@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="83" id="KGk-i7-Jjw" customClass="HeroesCell" customModule="MarvelsApp2" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="366" height="83"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="366" height="83"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rainbow.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="0Es-sb-jLi">
+                        <rect key="frame" x="20" y="10" width="99" height="62"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="62" id="JHa-0W-LNL"/>
+                            <constraint firstAttribute="width" constant="99" id="rKv-SH-evt"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Heroes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A67-dc-rRt">
+                        <rect key="frame" x="152" y="17" width="183" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Descripcion" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Hc-eI-npG">
+                        <rect key="frame" x="152" y="46" width="194" height="14.5"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="194" id="OMR-fz-ytt"/>
+                            <constraint firstAttribute="height" constant="14.5" id="afL-H0-9ND"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="0Es-sb-jLi" secondAttribute="trailing" constant="247" id="6fr-TE-Hhn"/>
+                    <constraint firstItem="A67-dc-rRt" firstAttribute="leading" secondItem="0Es-sb-jLi" secondAttribute="trailing" constant="33" id="ENd-PE-tpl"/>
+                    <constraint firstItem="4Hc-eI-npG" firstAttribute="top" secondItem="A67-dc-rRt" secondAttribute="bottom" constant="8" symbolic="YES" id="QHL-Yr-t35"/>
+                    <constraint firstAttribute="trailing" secondItem="A67-dc-rRt" secondAttribute="trailing" constant="31" id="Xya-lK-h59"/>
+                    <constraint firstItem="0Es-sb-jLi" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="ece-6S-Ili"/>
+                    <constraint firstItem="0Es-sb-jLi" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" symbolic="YES" id="jeY-7c-C87"/>
+                    <constraint firstItem="4Hc-eI-npG" firstAttribute="leading" secondItem="0Es-sb-jLi" secondAttribute="trailing" constant="33" id="ruK-MN-V9v"/>
+                    <constraint firstItem="A67-dc-rRt" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="17" id="wIY-gA-7wF"/>
+                    <constraint firstAttribute="trailing" secondItem="4Hc-eI-npG" secondAttribute="trailing" constant="20" symbolic="YES" id="wZK-N3-Caf"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="heroeDescription" destination="4Hc-eI-npG" id="WvJ-1d-6tM"/>
+                <outlet property="heroeImage" destination="0Es-sb-jLi" id="FMv-Nx-zpO"/>
+                <outlet property="heroeName" destination="A67-dc-rRt" id="Pvg-EY-QYA"/>
+            </connections>
+            <point key="canvasLocation" x="65.217391304347828" y="130.24553571428572"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="rainbow.jpg" width="58.560001373291016" height="30.239999771118164"/>
+    </resources>
+</document>
